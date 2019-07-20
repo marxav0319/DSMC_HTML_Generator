@@ -1,0 +1,1317 @@
+﻿<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1"
+http-equiv="content-type">
+<title>test</title>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+<p class="MsoNormal">MASKED DSMC TABLES – ZEDS<o:p></o:p></p>
+<p class="MsoNormal">MEETING: May 8, 2019<o:p></o:p></p>
+<p class="MsoNormal">
+</p>
+<p class="MsoNormalCxSpFirst">Data Cutoff
+Date: March 19<sup>th</sup>, 2018<o:p></o:p></p>
+<p class="MsoNormalCxSpMiddle">Paraxel
+Transfer Date: March 19<sup>th</sup>, 2018<o:p></o:p></p>
+<p class="MsoNormalCxSpMiddle">Trialmaster
+Transfer Date: March 19<sup>th</sup>, 2018<o:p></o:p></p>
+<p class="MsoNormalCxSpMiddle">Date Table
+Created: April 25th, 2018<o:p></o:p></p>
+<p class="MsoNormalCxSpMiddle">Software:
+SAS Version 9.4<o:p></o:p></p>
+<p class="MsoNormalCxSpMiddle"><o:p></o:p></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Prepared by:
+ZEDS SDCC Statisticians<o:p></o:p></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Andrea Troxel,
+ScD, PI<br>
+</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Mengling Liu, PhD<br>
+</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Ying Lu, MS</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Chenxiang Li, MS</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">Jinchun Zhang, MS<br>
+<o:p></o:p></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span
+style="font-size: 10pt; line-height: 107%;"><br>
+<o:p></o:p></span></p>
+<br>
+<big><big><big><span style="color: rgb(51, 102, 255);page-break-before: always;">Table of Contents</span></big></big></big><br>
+<ul id="mozToc">
+<!--mozToc h1 1 h2 2 h3 3 h4 4 h5 5 h6 6-->
+<li><a href="#mozTocId67638">Section
+1. Accrual
+</a>
+<ul>
+<li><a href="#mozTocId789777">Table 1.1: Overall Accrual Summary</a></li>
+
+<li><a href="#mozTocId32939">Table 1.2: Overall Accrual Summary
+by Strata</a></li>
+<li><a href="#mozTocId957565">Figure 1.1 Consort Flow Diagram
+(Enrollment,
+Randomization
+Strata, Treatment Allocation, Follow-up, and Data Analysis)</a></li>
+</ul>
+</li>
+<li><a href="#mozTocId535900">Section 2: Study Status (Randomized
+Participants):</a>
+<ul>
+<li><a href="#mozTocId970763">Table 2.1: Summary of Study
+Participant Status by Strata</a></li>
+<li><a href="#mozTocId531949">Table 2.2: Summary of Visit
+Completion by Strata</a></li>
+
+</ul>
+</li>
+<li><a href="#mozTocId178785">Section 3: Protocol Ineligibility and
+Protocol
+Deviations (Randomized Participants)</a>
+<ul>
+<li><a href="#mozTocId120935">Table 3.1: Summary of Protocol
+Ineligibility and Deviations by
+Strata</a></li>
+<li><a href="#mozTocId919014">Table 3.2: Summary of Number of
+Participants with
+Randomization Errors by Strata</a></li>
+<li><a href="#mozTocId17985">Table 3.3: Listing of Participants
+with Protocol
+Compliance Issue by Participating Clinical Center (Participant listing)</a></li>
+<li><a href="#mozTocId470419">Table 3.4: Listing of Participants
+with
+Randomization Errors by Participating Clinical Center (Participant
+Listing)</a></li>
+</ul>
+</li>
+<li><a href="#mozTocId622385">Section 4. Baseline Characteristics:</a>
+<ul>
+<li><a href="#mozTocId710689">Table 4.1: Summary of Participant
+Baseline Characteristics by
+Strata</a></li>
+<li><a href="#mozTocId702311">Figure 4.1 Boxplot of Age at
+Randomization by Strata</a></li>
+
+<li><a href="#mozTocId345140">Figure 4.2 Boxplot of Age at Onset
+by Strata</a></li>
+
+<li><a href="#mozTocId957217">Figure 4.3 Boxplot of Time from HZO
+Onset to
+Randomization
+by Strata</a></li>
+
+</ul>
+</li>
+<li><a href="#mozTocId228569">Section 5. Adverse and Serious Adverse
+Events:</a>
+<ul>
+<li><a href="#mozTocId856726">Table 5.1: Summary of Number of
+Participants with Serious
+Adverse Event (SAE) by Strata</a></li>
+
+<li><a href="#mozTocId829249">Table 5.2: Summary
+of Number of Participants with
+Suspected Unexpected Serious Adverse Reaction (SUSAR) by Strata</a></li>
+
+<li><a href="#mozTocId647267">Table 5.3: Summary of Reasons for
+Treatment
+Modification by Reason for Modification</a></li>
+
+<li><a href="#mozTocId792133">Table 5.4: Listing of Participant
+SAEs</a></li>
+
+<li><a href="#mozTocId281086">Table 5.5: Listing of SUSARs
+(Suspected,
+Unexpected
+and Related SAEs)</a></li>
+<li><a href="#mozTocId133665">Table
+5.6: Narrative of Participant Deaths</a></li>
+
+<li><a href="#mozTocId844868">Table 5.7: Listing of Reasons that
+Resulted in
+Treatment Modification (Temporary, Permanent or Dose Reduction)</a></li>
+
+</ul>
+</li>
+<li><a href="#mozTocId618394">Section 6. Acute Renal Failure</a>
+<ul>
+<li><a href="#mozTocId421268">Table 6.1: Summary of Number of
+Participants with Acute Renal
+Failure by Strata</a></li>
+
+<li><a href="#mozTocId43357">Figure
+6.1 Acute Kidney Failure Monitoring –
+Overall</a></li>
+<li><a href="#mozTocId87471">Table 6.2: Listing of Acute Renal
+Failure SAEs</a></li>
+</ul>
+</li>
+<li><a href="#mozTocId348061">Section 7. Low Baseline eGFR (45 –
+59)</a>
+<ul>
+<li><a href="#mozTocId640977">Table 7.1: Summary of Number of
+Participants with Baseline eGFR
+45 – 59 by Strata</a></li>
+<li><a href="#mozTocId462271">Table 7.2: Summary of Number of
+Participants with
+Low Baseline eGFR with Follow up eGFR &lt; 45 by Strata</a></li>
+<li><a href="#mozTocId574660">Table 7.3: Summary of Participants
+with Low
+Baseline eGFR with Follow up eGFR&lt;45 (Participant listing)</a></li>
+
+<li><a href="#mozTocId948084">Table 7.4: Listing of eGFR
+Measurements for
+Participants with Low Baseline eGFR with Follow-Up eGFR &lt; 45</a></li>
+</ul>
+</li>
+<li><a href="#mozTocId200066">Section 8. Interim Data Look:</a>
+<ul>
+<li><a href="#mozTocId474610">Table 8.1: Summary of Evaluability
+for Response at 12 Months by
+Strata</a></li>
+<li><a href="#mozTocId316832">Figure 8.1 Overall Endpoint Free
+Survival
+Kaplan-Meier
+Curve</a></li>
+<li><a href="#mozTocId818853">Table 8.2 Endpoint Free Survival,
+Overall</a></li>
+<li><a href="#mozTocId927114">Table 8.3: Summary of First
+Adjudicated Endpoint
+Type by 12 Months</a></li>
+<li><a href="#mozTocId514015">Table 8.4: Adjudicator Agreement
+for All
+Endpoints
+Adjudicated</a></li>
+
+<li><a href="#mozTocId748520">Table 8.5: Summary of Participant
+Vaccine Use
+After
+Start of Treatment by Strata</a></li>
+
+</ul>
+</li>
+</ul>
+
+
+<h1><a class="mozTocH1" name="mozTocId67638"></a><a style="color: rgb(51, 102, 255); font-weight: normal; page-break-before: always;" name="_Toc527557022">Section
+1. Accrual</a><br>
+</h1>
+
+
+
+<h2><a class="mozTocH2" name="mozTocId309873"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;"
+name="_Toc509920479"><span>Table 1.1: Overall Accrual Summary</span></a></h2>
+<h2><br>
+<div w3-include-html="Table 1.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<o:p></o:p></h2>
+<h2><a class="mozTocH2" name="mozTocId309873"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;"
+name="_Toc509920479"><span></span></a></h2>
+*9 study participants have been screened but are not yet
+randomized or considered screen failures.<o:p></o:p>
+<h2 style="font-weight: normal;"><a class="mozTocH2"
+name="mozTocId523896"></a><a style="color: rgb(51, 102, 255);"
+name="_Toc527557024">Table 1.2: Overall Accrual Summary by Strata</a></h2>
+
+<div w3-include-html="Table 1.2_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId859545"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;page-break-before: always;"
+name="_Toc527557025">Figure 1.1 Consort Flow Diagram (Enrollment,
+Randomization
+Strata, Treatment Allocation, Follow-up, and Data Analysis)</a><o:p></o:p></h2>
+<object type="text/html"
+data="Figure 1.1 CONSORT 2010 Flow Diagram masked oct172018.html"
+height="800" width="800"><br>
+</object>
+
+<h2><a class="mozTocH2" name="mozTocId274992"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557061">Figure 1.2: Cumulative Accrual</a></h2>
+
+<h2><img style="width: 640px; height: 480px;" alt="Figure 1.2"
+title="Figure 1.2" src="Accrual1.png"></h2>
+
+<h1><a class="mozTocH1" name="mozTocId535900"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;page-break-before: always;"
+name="_Toc527557027">Section 2: Study Status (Randomized Participants):</a><o:p></o:p></h1>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557028"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920483"><span style="">Table 2.1: Summary of Study
+Participant Status by Strata</span></a></h2>
+
+<div w3-include-html="Table 2.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">*Off
+treatment means permanent discontinuation. <o:p></o:p></p>
+<h2><a class="mozTocH2" name="mozTocId478289"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557029">Table 2.2: Summary of Visit Completion by Strata</a></h2>
+
+<div w3-include-html="Table 2.2_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><br>
+</h2>
+<h1 style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"><a
+class="mozTocH1" name="mozTocId178785"></a><a name="_Toc527557030">Section 3: Protocol Ineligibility and Protocol
+Deviations (Randomized Participants)</a><o:p></o:p></h1>
+<h2><a class="mozTocH2" name="mozTocId697596"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920486"><span style="">Table 3.1: Summary of Protocol
+Ineligibility and Deviations by
+Strata</span></a></h2>
+
+<div w3-include-html="Table 3.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId990755"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557032">Table 3.2: Summary of Number of Participants with
+Randomization Errors by Strata</a></h2>
+
+<div w3-include-html="Table 3.2_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId172205"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557033">Table 3.3: Listing of Participants with Protocol
+Compliance Issue by Participating Clinical Center (Participant Listing)</a></h2>
+
+<div w3-include-html="Table 3.3_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId392328"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557034">Table 3.4: Listing of Participants with
+Randomization Errors by Participating Clinical Center (Participant
+Listing)</a></h2>
+
+<div w3-include-html="Table 3.4_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h1 style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"><a
+name="_Toc527557035">Section 4. Baseline Characteristics:</a><o:p></o:p></h1>
+<h2><a class="mozTocH2" name="mozTocId484107"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920491"><span style="">Table 4.1: Summary of Participant
+Baseline Characteristics by
+Strata</span></a></h2>
+<br>
+
+<div w3-include-html="Table 4.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<br>
+<p class="MsoNormal">*One participants were randomized to the incorrect
+strata.
+45-002 (67 at HZO onset and 5 months from onset to randomization) was
+randomized to ‘&lt;60, chronic’ strata instead of ‘&gt;=60, recent’
+strata. Another participant 45-003 was
+randomized to ‘&gt;=60, chronic’ strata instead of ‘&lt;60, chronic’.<o:p></o:p></p>
+&nbsp;<br>
+<h2><a class="mozTocH2" name="mozTocId191761"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc509920494"><span style="">Figure 4.1 Boxplot of Age at
+Randomization by Strata</span></a></h2>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920494"><span style=""></span></a><img
+style="width: 640px; height: 480px;" alt="Figure 4.1"
+title="figure 4.1" src="Figure%2041_yl1.png"></h2>
+*One participants were randomized to the incorrect strata.
+45-002 (67 at HZO onset and 5 months from onset to randomization) was
+randomized to ‘&lt;60, chronic’ strata instead of ‘&gt;=60, recent’
+strata. Another participant 45-003 was
+randomized to ‘&gt;=60, chronic’ strata instead of ‘&lt;60, chronic’.<br>
+<br>
+<h2><a class="mozTocH2" name="mozTocId202225"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557038">Figure 4.2 Boxplot of Age at Onset by Strata</a></h2>
+<h2><br>
+</h2>
+<h2><img style="width: 640px; height: 480px;" alt="Figure 4.2"
+title="Figure 4.2" src="Figure%2042_yl1.png"><o:p></o:p></h2>
+*One participants were randomized to the incorrect strata. 45-002 (67
+at HZO onset and 5 months from onset to randomization) was randomized
+to ‘&lt;60, chronic’ strata instead of ‘&gt;=60, recent’ strata.
+Another participant 45-003 was randomized to ‘&gt;=60, chronic’ strata
+instead of ‘&lt;60, chronic’.
+<h2><a class="mozTocH2" name="mozTocId931781"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557039">Figure 4.3 Boxplot of Time from HZO Onset to
+Randomization
+by Strata</a></h2>
+<h2><img style="width: 640px; height: 480px;" alt="Figure 4.3"
+title="Figure 4.3" src="Figure%2043_yl1.png"><o:p></o:p></h2>
+*One
+participants were randomized to the incorrect strata. 45-002 (67 at HZO
+onset and 5 months from onset to randomization) was randomized to
+‘&lt;60, chronic’ strata instead of ‘&gt;=60, recent’ strata. Another
+participant 45-003 was randomized to ‘&gt;=60, chronic’ strata instead
+of ‘&lt;60, chronic’.
+<h1 style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"><a
+name="_Toc527557040">Section 5. Adverse and Serious Adverse Events:</a><o:p></o:p></h1>
+<h2><a class="mozTocH2" name="mozTocId796955"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920499"><span style="">Table 5.1: Summary of Number of
+Participants with Serious
+Adverse Event (SAE) by Strata</span></a></h2>
+
+<div w3-include-html="Table 5.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><a
+class="mozTocH2" name="mozTocId942789"></a><a name="_Toc527557046"></a></h2>
+<h2 style="font-weight: bold; color: rgb(51, 102, 255);"><a
+class="mozTocH2" name="mozTocId381540"></a><a
+style="font-weight: normal;" name="_Toc527557042">Table 5.2: Summary
+of Number of Participants with
+Suspected Unexpected Serious Adverse Reaction (SUSAR) by Strata</a></h2>
+
+<div w3-include-html="Table 5.2_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><a
+class="mozTocH2" name="mozTocId822717"></a><a name="_Toc527557046"></a></h2>
+<h2><a class="mozTocH2" name="mozTocId206335"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557043">Table 5.3: Summary of Reasons for Treatment
+Modification by Reason for Modification</a></h2>
+
+<div w3-include-html="Table 5.3_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><a
+class="mozTocH2" name="mozTocId472624"></a><a name="_Toc527557046"></a></h2>
+<h2><a class="mozTocH2" name="mozTocId463222"></a><a
+name="_Toc527557044"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920502"><span style="">Table 5.4: Listing of Participant
+SAEs</span></a></h2>
+
+<div w3-include-html="Table 5.4_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><a
+class="mozTocH2" name="mozTocId928823"></a><a name="_Toc527557046"></a></h2>
+<h2><a class="mozTocH2" name="mozTocId49502"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557045">Table 5.5: Listing of SUSARs (Suspected,
+Unexpected
+and Related SAEs)</a></h2>
+
+<div w3-include-html="Table 5.5_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2 style="color: rgb(51, 102, 255); font-weight: normal;"><a
+class="mozTocH2" name="mozTocId147535"></a><a name="_Toc527557046">Table
+5.6: Narrative of Participant Deaths</a></h2>
+
+<div w3-include-html="Table 5.6_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId346072"></a><a
+style="color: rgb(51, 102, 255);" name="_Toc527557026"></a></h2>
+<h2><a class="mozTocH2" name="mozTocId450199"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557046">Table 5.7: Listing of Reasons that Resulted in
+Treatment Modification (Temporary, Permanent or Dose Reduction)</a></h2>
+
+<div w3-include-html="Table 5.7_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId926025"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557046"></a></h2>
+<h1><a style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557048">Section 6. Acute Renal Failure</a><o:p></o:p></h1>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><b style="">CURRENTLY
+NO ACUTE RENAL FAILURESAES HAVE
+BEEN REPORTED BY ANY CENTER.<o:p></o:p></b></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">In this
+section are the proposed table shells and figures for reporting Acute
+Renal
+Failure.<o:p></o:p></p>
+<h2><a name="_Toc527557049"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920506"><span>Table 6.1: Summary of Number of
+Participants with Acute Renal
+Failure by Strata</span></a></h2>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920506"><span></span></a>
+
+<o:p></o:p></h2>
+<h2><a class="mozTocH2" name="mozTocId777242"></a><o:p></o:p></h2>
+<h2><a class="mozTocH2" name="mozTocId539365"></a><o:p></o:p></h2>
+<h2><br>
+</h2>
+<h2 style="font-weight: normal; color: rgb(51, 102, 255);"><a
+class="mozTocH2" name="mozTocId113206"></a><a name="_Toc527557050">Figure
+6.1 Acute Kidney Failure Monitoring –
+overall</a><o:p></o:p></h2>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557051"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920508"><span style="">Table 6.2: Listing of Acute Renal
+Failure SAEs</span></a></h2>
+
+
+<br>
+<h1><a style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc509920509"><span style="">Section 7. Low Baseline eGFR (45 –
+59)</span></a><o:p
+style="font-weight: normal; color: rgb(51, 102, 255);"></o:p></h1>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557053"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920510"><span style="">Table 7.1: Summary of Number of
+Participants with Baseline eGFR
+45 – 59 by Strata</span></a></h2>
+
+<div w3-include-html="Table 7.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<br>
+<h2><a class="mozTocH2" name="mozTocId80480"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557054">Table 7.2: Summary of Number of Participants with
+Low Baseline eGFR with Follow up eGFR &lt; 45 by Strata</a></h2>
+
+<div w3-include-html="Table 7.2_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<br>
+<h2><a class="mozTocH2" name="mozTocId249835"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557055">Table 7.3: Summary of Participants with Low
+Baseline eGFR with Follow up eGFR&lt;45 (Participant Listing)</a></h2>
+<h2><a class="mozTocH2" name="mozTocId971357"></a><o:p></o:p></h2>
+
+<div w3-include-html="Table 7.3_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<p style="color: rgb(51, 102, 255);" class="MsoNormal"><br>
+<o:p></o:p></p>
+<h2><a class="mozTocH2" name="mozTocId900680"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;page-break-before: always;"
+name="_Toc527557056">Table 7.4: Listing of eGFR Measurements for
+Participants with Low Baseline eGFR with Follow-Up eGFR &lt; 45</a></h2>
+
+
+<div w3-include-html="Table 7.4_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h1 style="color: rgb(51, 102, 255); font-weight: normal;page-break-before: always;"><a
+name="_Toc527557057">Section 8. Interim Data Look:</a><o:p></o:p></h1>
+<h2><a style="color: rgb(51, 102, 255); font-weight: normal;"
+name="_Toc527557058"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;"
+name="_Toc509920515"><span style="">Table 8.1: Summary of Evaluability
+for Response at 12 months for Participants by
+Strata</span></a></h2>
+
+<div w3-include-html="Table 8.1_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">*Suspected Endpoints by Clinician and sent for evaluation by CERC. </p>
+
+<h2><a class="mozTocH2" name="mozTocId113316"></a><a
+style="color: rgb(51, 102, 255); font-weight: normal;"
+name="_Toc527557059">Figure 8.1 Overall Endpoint Free Survival
+Kaplan-Meier
+Curve</a><o:p></o:p></h2>
+<p class="MsoNormalCxSpFirst"><b style="">THIS FIGURE
+WILL BE PROVIDED WHEN THE FIRST INTERIM ANALYSIS WILL BE PERFORMED.<o:p></o:p></b></p>
+<p class="MsoNormalCxSpLast"><o:p>&nbsp;</o:p></p>
+<h2><a style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557060"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc509920517"><span style="">Table 8.2 Endpoint Free Survival,
+Overall</span></a><o:p></o:p></h2>
+<p class="MsoNormalCxSpFirst"><b style="">THIS TABLE
+WILL BE PROVIDED WHEN THE FIRST INTERIM ANALYSIS WILL BE PERFORMED.<o:p></o:p></b></p>
+<p class="MsoNormal">
+</p>
+<table class="MsoTableGrid"
+style="border: medium none ; border-collapse: collapse;" border="1"
+cellpadding="0" cellspacing="0">
+<thead> <tr style="height: 15pt;">
+<td
+style="border: 1pt solid windowtext; padding: 0in 5.4pt; background: rgb(91, 155, 213) none repeat scroll 0% 50%; width: 79.85pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><span style="color: white;">Strata<o:p></o:p></span></b></p>
+</td>
+<td
+style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(91, 155, 213) none repeat scroll 0% 50%; width: 143.45pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><span style="color: white;">Variable<o:p></o:p></span></b></p>
+</td>
+<td
+style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(91, 155, 213) none repeat scroll 0% 50%; width: 49.25pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><span style="color: white;">Overall<o:p></o:p></span></b></p>
+</td>
+</tr>
+</thead> <tbody>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">All Strata<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N Event<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">% Censored<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Follow up Survivors<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">1 Year Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="color: black;">&lt; 60y, Recent</span><b><o:p></o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N Event<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">% Censored<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Follow up Survivors<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">1 Year Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="color: black;">&lt; 60y, Chronic</span><b><o:p></o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N Event<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">% Censored<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Follow up Survivors<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">1 Year Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="color: black;">≥ 60y, Recent</span><b><o:p></o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N Event<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">% Censored<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Follow up Survivors<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">1 Year Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="color: black;">≥ 60y, Chronic</span><b><o:p></o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="bottom" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">N Event<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">% Censored<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">Median Follow up Survivors<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+<tr style="height: 15pt;">
+<td
+style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 79.85pt; height: 15pt;"
+valign="top" width="106">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><b><o:p>&nbsp;</o:p></b></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 143.45pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="191">
+<p class="MsoNormal"
+style="margin-bottom: 0.0001pt; text-align: center; line-height: normal;"
+align="center"><span style="">1 Year Survival (95% CI)<o:p></o:p></span></p>
+</td>
+<td
+style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 49.25pt; height: 15pt;"
+nowrap="nowrap" valign="top" width="66"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal">
+</p>
+
+<h2><a class="mozTocH2" name="mozTocId274992"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557061">Table 8.3: Summary of First Adjudicated Endpoint
+Type by 12 Months</a></h2>
+
+<div w3-include-html="Table 8.3_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId274992"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557061">Figure 8.2: Endpoints by Participants</a></h2>
+
+<h2><img style="width: 640px; height: 480px;" alt="Figure 8.2"
+title="Figure 8.2" src="Figure 8_21.png"></h2>
+
+<h2><a class="mozTocH2" name="mozTocId156280"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557062">Table 8.4: Adjudicator Agreement for All
+Endpoints
+Adjudicated</a></h2>
+
+<div w3-include-html="Table 8.4_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+<h2><a class="mozTocH2" name="mozTocId748520"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557063">Table 8.5: Suspected Endpoints by Clinician</a></h2>
+<h2><a class="mozTocH2" name="mozTocId25891"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557063"></a>
+
+<div w3-include-html="NewTable 8.6_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+</h2>
+
+<h2><a class="mozTocH2" name="mozTocId748520"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);page-break-before: always;"
+name="_Toc527557063">Table 8.6: Summary of Participant Vaccine Use
+After
+Start of Treatment by Strata</a></h2>
+<h2><a class="mozTocH2" name="mozTocId25891"></a><a
+style="font-weight: normal; color: rgb(51, 102, 255);"
+name="_Toc527557063"></a>
+
+<div w3-include-html="Table 8.5_yl.html"></div>
+<!--div w3-include-html="Index.html"></div-->
+<script type="text/javascript">
+w3IncludeHTML();
+</script>
+
+</h2>
+*Participants who neither had Zoster Live vaccine or Recombinant vaccine.
+
+
+
+</body>
+</html>

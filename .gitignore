@@ -33,3 +33,5 @@
 
 # Output Directory
 bin/
+test/resources/*.png
+test/test_inputs/*.txt

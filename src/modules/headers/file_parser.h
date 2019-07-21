@@ -4,10 +4,19 @@
  * be updated once a plan of action has been selected.
  */
 
+#include <string>
+#include <fstream>
+
 class FileParser
 {
 public:
+  // Constructor
+  FileParser(std::string, bool);
 
+  // Member methods
+  void close();
 private:
-  
+  std::string inputFileName;
+  std::ifstream fileHandle;
+  verbose;
 };

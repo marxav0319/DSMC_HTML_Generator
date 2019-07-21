@@ -1,5 +1,5 @@
 #
-# To do...
+# Use this makefile to compile the program. 
 #
 # Author: Mark Xavier
 #
@@ -10,8 +10,8 @@ MAIN = src/main.cpp
 MODULES = src/modules/src/*.cpp
 
 all: 
-	rm -rf bin test/test_outputs
-	mkdir bin test/test_outputs
+	rm -rf bin
+	mkdir bin
 	$(CC) $(CFLAGS) -o bin/DSMC_HTML_Generator $(MAIN) $(MODULES)
 
 clean:

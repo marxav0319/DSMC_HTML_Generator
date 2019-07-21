@@ -6,6 +6,22 @@ generates html plots via SAS, but combining these into a document with a table o
 working links was a challenge.  To help address this challenge I'm writing this document preperation
 program.
 
+At the moment this program does work, but I need to do a bit more testing before I'm ready to call
+this ok for use.
+
+# Requirements
+
+To compile
+
++ g++
+
+To test and compile
+
++ g++
++ python 3.6+
++ numpy
++ plotly
+
 # Usage
 
 ```bash

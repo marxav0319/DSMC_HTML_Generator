@@ -1,5 +1,9 @@
 /**
- * To do
+ * This file is part of the DSMC_HTML_Generator package.
+ *
+ * This file implements the FileWriter class.
+ *
+ * Author: Mark Xavier
  *
  */
 
@@ -8,6 +12,7 @@
 
 #include "../headers/file_writer.h"
 
+// Write some boiler plate HTML
 FileWriter::FileWriter(std::string outputFileName_) : outputFileName(outputFileName_)
 {
   std::cout << "File Writer Created\n";
@@ -19,11 +24,14 @@ FileWriter::FileWriter(std::string outputFileName_) : outputFileName(outputFileN
              << "</head>\n<body>\n\n<ul class=\"table_of_contents\">";
 }
 
+// Write out the table of contents
 void FileWriter::writeTableOfContents(std::vector<Entry*> entries)
 {
+  // Variable setup
   std::vector<Entry*>::iterator it;
   int id = 0;
-  std::cout << "\n\nWriting Table of Contents\n";
+
+  // For each entry, write the entry as a list-item with it's associated id
   for(it = entries.begin(); it != entries.end(); ++it)
   {
     std::cout << (*it)->getTitle() << std::endl;
@@ -37,12 +45,15 @@ void FileWriter::writeTableOfContents(std::vector<Entry*> entries)
   fileHandle << "</ul>\n\n";
 }
 
+// Open a file and write it's contents to the output file
 void FileWriter::writeFileContents(std::string filePath)
 {
+  // Variable setup
   std::ifstream plotFileHandle;
   plotFileHandle.open(filePath);
   std::string line;
-  std::cout << filePath << std::endl;
+
+  // For each line in the file, write the line to the output file if it doesn't include certain keys
   while(std::getline(plotFileHandle, line))
   {
     if(plotFileHandle.eof())
@@ -56,19 +67,26 @@ void FileWriter::writeFileContents(std::string filePath)
   plotFileHandle.close();
 }
 
+// Writes the entries the body of the HTML file outside of the table of contents
 void FileWriter::writeBody(std::vector<Entry*> entries)
 {
   std::vector<Entry*>::iterator it;
+
+  // For each entry create a <div> and write file contents if applicable
   for(it = entries.begin(); it != entries.end(); ++it)
   {
     std::cout << "Writing File " << (*it)->getTitle() << std::endl;
     fileHandle << "\n<div class=\"section\" id=\"" << (*it)->getName() << "\">" << std::endl
                << "    " << (*it)->getTitle() << std::endl;
-    writeFileContents((*it)->getFilePath());
+
+    // Only write file contents if entry.filePath != "None"
+    if((*it)->getFilePath().compare("None") != 0)
+      writeFileContents((*it)->getFilePath());
     fileHandle << "\n</div>\n"; 
   }
 }
 
+// Wraps the other writer methods and writes the entire output file
 void FileWriter::writeOutput(std::vector<Entry*> entries)
 {
   writeTableOfContents(entries);

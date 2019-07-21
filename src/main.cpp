@@ -11,6 +11,7 @@
 
 #include "modules/headers/file_parser.h"
 #include "modules/headers/entry.h"
+#include "modules/headers/file_writer.h"
 
 void printUsage()
 {
@@ -64,6 +65,8 @@ int main(int argc, char* argv[])
   std::vector<Entry*> entries;
   FileParser fileReader = FileParser(inputFileName, verbose);
   fileReader.getEntries(entries);
+
+  FileWriter fileWriter = FileWriter(outputFileName);
 
   return 0;
 }

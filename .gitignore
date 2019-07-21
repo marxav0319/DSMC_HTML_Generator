@@ -35,3 +35,4 @@
 bin/
 test/resources/*.png
 test/test_inputs/*.txt
+test/test_outputs/*.html

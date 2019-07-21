@@ -1,11 +1,23 @@
 # DSMC_HTML_Generator
 
-This is a little HTML generator I'm creating for work.  The statistical programmer working on the
-study needed to put together a bunch of images and HTML snippets together, however keeping track
-of the various filenames and getting them into both the table of contents and the body proved to be
-a frustating task.
+This is a little HTML generator I'm creating for work.  This generator is being created for an NIH
+funded clinical research study being conducted at NYU.  The statistical programmer on the trial
+generates html plots via SAS, but combining these into a document with a table of contents and
+working links was a challenge.  To help address this challenge I'm writing this document preperation
+program.
 
-This program attempts to generate a bare-bones HTML page gathering the various images and tables
-into the document.
+# Usage
 
-This is a work in progress, I'll put more info here as I complete this. 
+```bash
+>> # Compiling
+>> # Run make to generate the program
+>> make
+>>
+>> # or run make compile_and_test to also generate a test html page.
+>> make compile_and_test
+>>
+>> # The program compiles to the bin directory
+>> # To run (on Windows)
+>> bin/DSMC_HTML_Generator [-h] [-v] <input-file_path> <output-file-path>
+```
+

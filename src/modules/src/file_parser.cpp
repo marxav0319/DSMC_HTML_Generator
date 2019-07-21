@@ -5,6 +5,7 @@
  */
 
 #include <iostream>
+#include <sstream>
 
 #include "../headers/file_parser.h"
 
@@ -21,23 +22,32 @@ void FileParser::close()
   fileHandle.close();
 }
 
-void FileParser::getEntries(std::vector<Entry*> entriesList)
+void FileParser::getEntries(std::vector<Entry*>& entriesList)
 {
   std::string entry;
+  int id = 0;
+  std::string divName("dsmc_toc_id_");
   while(!fileHandle.eof())
   {
     if(fileHandle.eof())
       break;
 
     std::getline(fileHandle, entry);
-    std::size_t targetLocation = entry.find('|');
-    std::string title = entry.substr(0, targetLocation - 2);
-    std::string location = entry.substr(targetLocation + 1);
-    Entry* nextEntry = new Entry(title, location);
-    entriesList.push_back(nextEntry);
+    if(entry.length() == 0)
+      break;
 
-    if(verbose)
-      std::cout << "Reading Entry - Title: " << " Filepath: " << location << std::endl;
+    std::size_t targetLocation = entry.find('|');
+    std::string title = entry.substr(0, targetLocation - 1);
+    std::string location = entry.substr(targetLocation + 2);
+
+    std::stringstream ss;
+    std::string idNumberString;
+    ss << id;
+    ss >> idNumberString;
+
+    Entry* nextEntry = new Entry(title, location, divName + idNumberString);
+    entriesList.push_back(nextEntry);
+    id++;
   }
 
   fileHandle.close();

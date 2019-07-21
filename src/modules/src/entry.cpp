@@ -6,7 +6,9 @@
 
 #include "../headers/entry.h"
 
-Entry::Entry(std::string title_, std::string filePath_) : title(title_), filePath(filePath_)
+Entry::Entry(std::string title_, std::string filePath_, std::string name_) : title(title_),
+                                                                             filePath(filePath_),
+                                                                             name(name_)
 {
   return;
 }

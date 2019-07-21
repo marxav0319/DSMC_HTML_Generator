@@ -34,6 +34,7 @@
 # Output Directory
 bin/
 test/resources/*.png
+test/resources/*.html
 test/test_inputs/*.txt
 test/test_outputs/*.html
 sample_file/

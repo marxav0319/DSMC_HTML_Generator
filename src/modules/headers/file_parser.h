@@ -21,7 +21,7 @@ public:
 
   // Member methods
   void close();
-  void getEntries(std::vector<Entry*>);
+  void getEntries(std::vector<Entry*>&);
 private:
   std::string inputFileName;
   std::ifstream fileHandle;

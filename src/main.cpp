@@ -67,6 +67,7 @@ int main(int argc, char* argv[])
   fileReader.getEntries(entries);
 
   FileWriter fileWriter = FileWriter(outputFileName);
+  fileWriter.writeOutput(entries);
 
   return 0;
 }

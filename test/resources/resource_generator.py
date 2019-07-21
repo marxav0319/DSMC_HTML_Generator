@@ -10,23 +10,24 @@ import random
 from argparse import ArgumentParser
 import numpy as np
 import matplotlib.pyplot as plt
+import plotly as py
+import plotly.graph_objects as go
 
 DEFAULT_NUMBER_OF_PLOTS = 10
 
-def plot_histogram(data, index):
+def _plot(data, index):
     """Plots a generic histogram of the list of numbers and saves to the resources directory."""
 
-    fig, ax = plt.subplots(1, 1)
-    ax.hist(data)
-    filepath = 'fig_%d_hist.png' % index
-    fig.savefig(filepath)
+    filepath = 'fig_%d_hist.html' % index
+    fig = go.Figure(data=[go.Histogram(x=data)])
+    py.offline.plot(fig, filename=filepath)
 
 def generate_plots(number_of_plots):
     """Loops [number_of_plots] times and creates [number_of_plots] histograms."""
 
     for index in range(number_of_plots):
         data = np.random.poisson(random.randint(0, 100), 1000)
-        plot_histogram(data, index)
+        _plot(data, index)
 
 def clean_resources_folder():
     """Cleans out the resources directory by deleting all created .png files."""

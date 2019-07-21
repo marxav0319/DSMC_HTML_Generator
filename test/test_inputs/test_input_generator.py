@@ -13,8 +13,9 @@ def generate_test_input():
     f = open('test_input.txt', 'w')
     index = 0
     for filename in directory:
-        if '.png' in filename:
-            f.write('%d %s Header | %s\n' % (index, filename, filename))
+        if '.html' in filename:
+            full_path = os.path.abspath(os.path.join('../resources', filename))
+            f.write('%d %s Header | %s\n' % (index, filename, full_path))
             index += 1
     f.close()
 

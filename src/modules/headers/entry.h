@@ -13,15 +13,17 @@ class Entry
 {
 public:
   // Constructor
-  Entry(std::string, std::string);
+  Entry(std::string, std::string, std::string);
 
   // Getters
   std::string getTitle() {return title;}
   std::string getFilePath() {return filePath;}
+  std::string getName() {return name;}
 
 private:
   std::string title;
   std::string filePath;
+  std::string name;
 };
 
 #endif // ENTRY_H

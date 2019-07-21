@@ -14,8 +14,7 @@ import matplotlib.pyplot as plt
 DEFAULT_NUMBER_OF_PLOTS = 10
 
 def plot_histogram(data, index):
-    """
-    """
+    """Plots a generic histogram of the list of numbers and saves to the resources directory."""
 
     fig, ax = plt.subplots(1, 1)
     ax.hist(data)
@@ -23,16 +22,14 @@ def plot_histogram(data, index):
     fig.savefig(filepath)
 
 def generate_plots(number_of_plots):
-    """
-    """
+    """Loops [number_of_plots] times and creates [number_of_plots] histograms."""
 
     for index in range(number_of_plots):
         data = np.random.poisson(random.randint(0, 100), 1000)
         plot_histogram(data, index)
 
 def clean_resources_folder():
-    """
-    """
+    """Cleans out the resources directory by deleting all created .png files."""
 
     directory_tree = os.listdir('./')
     for filename in directory_tree:
@@ -40,8 +37,7 @@ def clean_resources_folder():
             os.unlink(filename)
 
 def main():
-    """
-    """
+    """The main entrypoint for this script."""
 
     parser = ArgumentParser(description='Generate test plots for the DSMC_HTML_Generator.')
     parser.add_argument('-n', '--number-of-plots', type=int, help='The number of plots to generate',

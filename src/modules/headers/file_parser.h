@@ -4,8 +4,14 @@
  * be updated once a plan of action has been selected.
  */
 
+#ifndef FILEPARSER_H
+#define FILEPARSER_H
+
 #include <string>
 #include <fstream>
+#include <vector>
+
+#include "entry.h"
 
 class FileParser
 {
@@ -15,8 +21,11 @@ public:
 
   // Member methods
   void close();
+  void getEntries(std::vector<Entry*>);
 private:
   std::string inputFileName;
   std::ifstream fileHandle;
-  verbose;
+  bool verbose;
 };
+
+#endif // FILEPARSER_H

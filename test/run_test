@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../bin/DSMC_HTML_Generator test/test_inputs/test_input.txt test/test_outputs/test_output.html

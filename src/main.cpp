@@ -9,6 +9,9 @@
 #include <cstdlib>
 #include <unistd.h>
 
+#include "modules/headers/file_parser.h"
+#include "modules/headers/entry.h"
+
 void printUsage()
 {
   std::cout << "\n##################################################################\n"
@@ -57,6 +60,10 @@ int main(int argc, char* argv[])
 
   std::string inputFileName(argv[optind++]);
   std::string outputFileName(argv[optind]);
+
+  std::vector<Entry*> entries;
+  FileParser fileReader = FileParser(inputFileName, verbose);
+  fileReader.getEntries(entries);
 
   return 0;
 }

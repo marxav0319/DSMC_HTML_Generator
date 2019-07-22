@@ -38,3 +38,4 @@ test/resources/*.html
 test/test_inputs/*.txt
 test/test_outputs/*.html
 sample_file/
+template/

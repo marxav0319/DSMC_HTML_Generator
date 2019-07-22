@@ -27,14 +27,14 @@ languages (I'm looking at you JS) to help with the dynamic content loading.
 
 To compile
 
-+ g++
++ g++ (I used gcc 6.3.0)
 
 To test and compile
 
-+ g++
++ g++ (I used gcc 6.3.0)
 + python 3.6+
-+ numpy
-+ plotly
++ numpy 1.16+
++ plotly 4.0+
 
 # Usage
 

@@ -20,7 +20,7 @@ def _plot(data, index):
 
     filepath = 'fig_%d_hist.html' % index
     fig = go.Figure(data=[go.Histogram(x=data)])
-    py.offline.plot(fig, filename=filepath)
+    py.offline.plot(fig, filename=filepath, auto_open=False)
 
 def generate_plots(number_of_plots):
     """Loops [number_of_plots] times and creates [number_of_plots] histograms."""

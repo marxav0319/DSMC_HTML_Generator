@@ -25,10 +25,10 @@ FileWriter::FileWriter(std::string outputFileName_) : outputFileName(outputFileN
 }
 
 // Write out the table of contents
-void FileWriter::writeTableOfContents(std::vector<Entry*> entries)
+void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
 {
   // Variable setup
-  std::vector<Entry*>::iterator it;
+  std::deque<Entry*>::iterator it;
   int id = 0;
 
   // For each entry, write the entry as a list-item with it's associated id
@@ -68,26 +68,34 @@ void FileWriter::writeFileContents(std::string filePath)
 }
 
 // Writes the entries the body of the HTML file outside of the table of contents
-void FileWriter::writeBody(std::vector<Entry*> entries)
+void FileWriter::writeBody(std::deque<Entry*> entries)
 {
-  std::vector<Entry*>::iterator it;
+  std::deque<Entry*>::iterator it;
 
   // For each entry create a <div> and write file contents if applicable
-  for(it = entries.begin(); it != entries.end(); ++it)
+  while(entries.size() > 0)
   {
-    std::cout << "Writing File " << (*it)->getTitle() << std::endl;
-    fileHandle << "\n<div class=\"section\" id=\"" << (*it)->getName() << "\">" << std::endl
-               << "    " << (*it)->getTitle() << std::endl;
+    // Get the first entry
+    Entry* entry = entries.front();
+    std::cout << "Writing File " << entry->getTitle() << std::endl;
 
-    // Only write file contents if entry.filePath != "None"
-    if((*it)->getFilePath().compare("None") != 0)
-      writeFileContents((*it)->getFilePath());
-    fileHandle << "\n</div>\n"; 
+    // Write the appropriate <div>
+    fileHandle << "\n<div class='\"section\" id=\"" << entry->getName() << "\">" << std::endl;
+    fileHandle << entry->getTitle() << std::endl;
+
+    // If this is an html file, write contents to file
+    if(entry->getFilePath().compare("None") != 0)
+      writeFileContents(entry->getFilePath());
+    fileHandle << "\n</div>\n";
+
+    // Delete the entry
+    entries.pop_front();
+    delete entry;
   }
 }
 
 // Wraps the other writer methods and writes the entire output file
-void FileWriter::writeOutput(std::vector<Entry*> entries)
+void FileWriter::writeOutput(std::deque<Entry*> entries)
 {
   writeTableOfContents(entries);
   writeBody(entries);

@@ -15,7 +15,7 @@
 
 #include <string>
 #include <fstream>
-#include <vector>
+#include <deque>
 
 #include "entry.h"
 
@@ -38,7 +38,7 @@ public:
    * @parm entries : An std::vector<Entry*> of the entries to write.
    * @return : void
    */
-  void writeOutput(std::vector<Entry*> entries);
+  void writeOutput(std::deque<Entry*> entries);
 private:
   std::string outputFileName;
   std::ofstream fileHandle;
@@ -49,7 +49,7 @@ private:
    * @param entries : The std::vector<Enry*> to write to file.
    * @return : void
    */
-  void writeTableOfContents(std::vector<Entry*> entries);
+  void writeTableOfContents(std::deque<Entry*> entries);
 
   /**
    * Writes the entries and the associated HTML snippets to the file after the table of contents.
@@ -57,7 +57,7 @@ private:
    * @param entries : The std::vector<Enry*> to write to file.
    * @return : void
    */
-  void writeBody(std::vector<Entry*> entries);
+  void writeBody(std::deque<Entry*> entries);
 
   /**
    * Opens the resource file containing the source HTML and writes it to the output file.

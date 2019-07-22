@@ -13,7 +13,7 @@
 
 #include <string>
 #include <fstream>
-#include <vector>
+#include <deque>
 
 #include "entry.h"
 
@@ -44,7 +44,7 @@ public:
    * @param entriesList : An std::vector of Entry*, expected to be emtpy.
    * @return : void
    */
-  void getEntries(std::vector<Entry*>& entriesList);
+  void getEntries(std::deque<Entry*>& entriesList);
 private:
   // Member Data
   std::string inputFileName;

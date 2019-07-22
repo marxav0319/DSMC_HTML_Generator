@@ -27,7 +27,7 @@ void FileParser::close()
 }
 
 // This is where the heavy-lifting gets done
-void FileParser::getEntries(std::vector<Entry*>& entriesList)
+void FileParser::getEntries(std::deque<Entry*>& entriesList)
 {
   // Variable setup
   std::string entry;

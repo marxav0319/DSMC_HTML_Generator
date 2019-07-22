@@ -12,6 +12,7 @@
 #include <string>
 #include <cstdlib>
 #include <unistd.h>
+#include <deque>
 
 #include "modules/headers/file_parser.h"
 #include "modules/headers/entry.h"
@@ -79,7 +80,7 @@ int main(int argc, char* argv[])
   std::string outputFileName(argv[optind]);
 
   // Read input file
-  std::vector<Entry*> entries;
+  std::deque<Entry*> entries;
   FileParser fileReader = FileParser(inputFileName, verbose);
   fileReader.getEntries(entries);
 

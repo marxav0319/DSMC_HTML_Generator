@@ -11,6 +11,7 @@
 #include <sstream>
 
 #include "../headers/file_writer.h"
+#include "../../constants.h"
 
 // Write some boiler plate HTML
 FileWriter::FileWriter(std::string outputFileName_) : outputFileName(outputFileName_)
@@ -45,26 +46,42 @@ void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
   fileHandle << "</ul>\n\n";
 }
 
+bool FileWriter::isSkippableTag(const std::string line)
+{
+  bool isDocStart = line.find(DOC_START) != std::string::npos;
+  bool isHTMLStart = line.find(HTML_START) != std::string::npos;
+  bool isHTMLEnd = line.find(HTML_END) != std::string::npos;
+  bool isBodyStart = line.find(BODY_START) != std::string::npos;
+  bool isBodyEnd = line.find(BODY_END) != std::string::npos;
+  bool isTitleStart = line.find(TITLE_START) != std::string::npos;
+  bool isTitleEnd = line.find(TITLE_END) != std::string::npos;
+  bool isSASString = line.find(SAS_SYSTEM) != std::string::npos;
+  bool result = (isHTMLStart || isHTMLEnd || isBodyStart || isBodyEnd || isTitleStart || isTitleEnd
+                 || isSASString);
+
+  return result;
+}
+
 // Open a file and write it's contents to the output file
-void FileWriter::writeFileContents(std::string filePath)
+void FileWriter::writeFileContents(const std::string filePath)
 {
   // Variable setup
-  std::ifstream plotFileHandle;
-  plotFileHandle.open(filePath);
+  htmlFileHandle.open(filePath);
   std::string line;
 
   // For each line in the file, write the line to the output file if it doesn't include certain keys
-  while(std::getline(plotFileHandle, line))
+  while(std::getline(htmlFileHandle, line))
   {
-    if(plotFileHandle.eof())
+    if(htmlFileHandle.eof())
       break;
 
-    if(line.find("<html>") == std::string::npos && line.find("</html>") == std::string::npos
-       && line.find("<body>") == std::string::npos && line.find("</body>") == std::string::npos
-       && line.find("<head>") == std::string::npos && line.find("</head>") == std::string::npos)
+    if(line.find(HEAD_START) != std::string::npos)
+      while(line.find(HEAD_END) == std::string::npos)
+        std::getline(htmlFileHandle, line);
+    else if(!isSkippableTag(line))
       fileHandle << line << std::endl;
   }
-  plotFileHandle.close();
+  htmlFileHandle.close();
 }
 
 // Writes the entries the body of the HTML file outside of the table of contents
@@ -80,7 +97,7 @@ void FileWriter::writeBody(std::deque<Entry*> entries)
     std::cout << "Writing File " << entry->getTitle() << std::endl;
 
     // Write the appropriate <div>
-    fileHandle << "\n<div class='\"section\" id=\"" << entry->getName() << "\">" << std::endl;
+    fileHandle << "\n<div class=\"section\" id=\"" << entry->getName() << "\">" << std::endl;
     fileHandle << entry->getTitle() << std::endl;
 
     // If this is an html file, write contents to file

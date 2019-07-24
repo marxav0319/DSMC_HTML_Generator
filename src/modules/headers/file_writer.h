@@ -42,6 +42,7 @@ public:
 private:
   std::string outputFileName;
   std::ofstream fileHandle;
+  std::ifstream htmlFileHandle;
 
   /**
    * Writes the table of contents to the output HTML file given the vector of entries.
@@ -52,6 +53,14 @@ private:
   void writeTableOfContents(std::deque<Entry*> entries);
 
   /**
+   * Opens the resource file containing the source HTML and writes it to the output file.
+   *
+   * @param entries : The filePath of the file with the HTML snippet.
+   * @return : void
+   */
+  void writeFileContents(const std::string filePath);
+
+  /**
    * Writes the entries and the associated HTML snippets to the file after the table of contents.
    *
    * @param entries : The std::vector<Enry*> to write to file.
@@ -59,13 +68,7 @@ private:
    */
   void writeBody(std::deque<Entry*> entries);
 
-  /**
-   * Opens the resource file containing the source HTML and writes it to the output file.
-   *
-   * @param entries : The filePath of the file with the HTML snippet.
-   * @return : void
-   */
-  void writeFileContents(std::string filePath);
+  bool isSkippableTag(const std::string);
 };
 
 #endif // FILEWRITER_H

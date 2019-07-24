@@ -19,8 +19,7 @@ FileWriter::FileWriter(std::string outputFileName_) : outputFileName(outputFileN
   std::cout << "File Writer Created\n";
   fileHandle.open(outputFileName);
   fileHandle << "<!DOCTYPE html>\n\n<head>\n"
-             << "<meta content=\"text/html; charset=ISO-8859-1\"\n"
-             << "http-equiv=\"content-type\">\n"
+             << "<meta content=\"text/html; charset=ISO-8859-1\" http-equiv=\"content-type\">\n"
              << "<title>test</title>\n"
              << "</head>\n<body>\n\n<ul class=\"table_of_contents\">";
 }

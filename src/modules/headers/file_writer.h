@@ -53,6 +53,14 @@ private:
   void writeTableOfContents(std::deque<Entry*> entries);
 
   /**
+   * Determines if the std::string passed contains an HTML tag that should not be written to file.
+   *
+   * @param line: The std::string to check for tags in.
+   * @return : void
+   */
+  bool isSkippableTag(const std::string line);
+
+  /**
    * Opens the resource file containing the source HTML and writes it to the output file.
    *
    * @param entries : The filePath of the file with the HTML snippet.
@@ -67,8 +75,6 @@ private:
    * @return : void
    */
   void writeBody(std::deque<Entry*> entries);
-
-  bool isSkippableTag(const std::string);
 };
 
 #endif // FILEWRITER_H

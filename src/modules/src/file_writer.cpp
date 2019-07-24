@@ -31,6 +31,7 @@ void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
   // Variable setup
   std::deque<Entry*>::iterator it;
   int id = 0;
+  bool startedWriting = false;
 
   // For each entry, write the entry as a list-item with it's associated id
   for(it = entries.begin(); it != entries.end(); ++it)
@@ -40,14 +41,34 @@ void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
     std::string idNumberString;
     ss << id;
     ss >> idNumberString;
-    fileHandle << "\n<li>\n    <a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
-               << "</a>\n</li>\n";
+
+    // If this is the table of contents start, note that so sublists are properly written
+    if((*it)->getFilePath().compare("None") == 0 && startedWriting == false)
+    {
+      fileHandle << "\n<li>\n<a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
+                 << "</a>\n</li>\n<ul>";
+      startedWriting = true;
+    }
+    // If we've already started writing, seeing another "None" means end a previous sublist
+    else if((*it)->getFilePath().compare("None") == 0 && startedWriting == true)
+    {
+      fileHandle << "\n</ul>\n<li>\n<a href=\"#" << (*it)->getName() << "\">"
+                 << (*it)->getTitle() << "</a>\n</li>\n<ul>";
+    }
+    // Otherwise just write list items as normal
+    else
+    {
+      fileHandle << "\n<li>\n<a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
+                 << "</a>\n</li>";
+    }
   }
-  fileHandle << "</ul>\n\n";
+  fileHandle << "</ul>\n\n<hr>";
 }
 
+// Check if the line contains a tag we want to skip (in constants.h)
 bool FileWriter::isSkippableTag(const std::string line)
 {
+  // Create a whole bunch of boolean variables
   bool isDocStart = line.find(DOC_START) != std::string::npos;
   bool isHTMLStart = line.find(HTML_START) != std::string::npos;
   bool isHTMLEnd = line.find(HTML_END) != std::string::npos;
@@ -75,9 +96,12 @@ void FileWriter::writeFileContents(const std::string filePath)
     if(htmlFileHandle.eof())
       break;
 
+    // If this tag is <head>, skip all lines until after </head>
     if(line.find(HEAD_START) != std::string::npos)
       while(line.find(HEAD_END) == std::string::npos)
         std::getline(htmlFileHandle, line);
+
+    // If this is one of our skippable tags, skip the line
     else if(!isSkippableTag(line))
       fileHandle << line << std::endl;
   }
@@ -92,17 +116,21 @@ void FileWriter::writeBody(std::deque<Entry*> entries)
   // For each entry create a <div> and write file contents if applicable
   while(entries.size() > 0)
   {
-    // Get the first entry
+    // Get the entry at the top of the deque
     Entry* entry = entries.front();
     std::cout << "Writing File " << entry->getTitle() << std::endl;
 
     // Write the appropriate <div>
     fileHandle << "\n<div class=\"section\" id=\"" << entry->getName() << "\">" << std::endl;
-    fileHandle << entry->getTitle() << std::endl;
 
-    // If this is an html file, write contents to file
-    if(entry->getFilePath().compare("None") != 0)
+    // If this is a section header, write with <h1> else with <h2>, then close div
+    if(entry->getFilePath().compare("None") == 0)
+      fileHandle << "<h1>" << entry->getTitle() << "</h1>" << std::endl;
+    else
+    {
+      fileHandle << "<h2>" << entry->getTitle() << "</h2>" << std::endl;
       writeFileContents(entry->getFilePath());
+    }
     fileHandle << "\n</div>\n";
 
     // Delete the entry

@@ -88,8 +88,8 @@ bool FileWriter::isSkippableTag(const std::string line)
   bool isTitleStart = line.find(TITLE_START) != std::string::npos;
   bool isTitleEnd = line.find(TITLE_END) != std::string::npos;
   bool isSASString = line.find(SAS_SYSTEM) != std::string::npos;
-  bool result = (isHTMLStart || isHTMLEnd || isBodyStart || isBodyEnd || isTitleStart || isTitleEnd
-                 || isSASString);
+  bool result = (isDocStart || isHTMLStart || isHTMLEnd || isBodyStart || isBodyEnd || isTitleStart
+                 || isTitleEnd || isSASString);
 
   return result;
 }

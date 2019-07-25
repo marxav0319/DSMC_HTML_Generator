@@ -12,11 +12,8 @@
 #include "../headers/file_parser.h"
 
 // Open the input file
-FileParser::FileParser(std::string inputFileName_, bool verbose_) : inputFileName(inputFileName_),
-                                                                    verbose(verbose_)
+FileParser::FileParser(std::string inputFileName_) : inputFileName(inputFileName_)
 {
-  if(verbose)
-    std::cout << "Opening Input File\n";
   fileHandle.open(inputFileName);
 }
 

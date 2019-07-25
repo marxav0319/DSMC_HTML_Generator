@@ -48,15 +48,12 @@ To test and compile
 >> # Run make to generate the program
 >> make
 >>
->> # or run make verbose to also generate a test html page.
->> make verbose
+>> # or compile_and_test make verbose to also generate a test html page.
+>> make compile_and_test
 >>
 >> # The program compiles to the bin directory
->> bin/DSMC_HTML_Generator [-h] [-v] <input-file_path> <output-file-path>
+>> bin/DSMC_HTML_Generator [-h] <input-file_path> <output-file-path>
 ```
-
-The `v` option is inconsistent and hasn't helped me much, I'll likely abandon it until the end when
-I want to provide diagnositics for a more finished product.
 
 ## The Input and Output Files
 

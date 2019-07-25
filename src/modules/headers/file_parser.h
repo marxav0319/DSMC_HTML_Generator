@@ -27,9 +27,8 @@ public:
    * appripriately created "Entry" instances, then stores those in an std::vector.
    *
    * @param inputFileName_ : The name of the input file as an std::string.
-   * @param verbose_ : Bool, whether or not to run in verbose mode.
    */
-  FileParser(std::string inputFileName_, bool verbose_);
+  FileParser(std::string inputFileName_);
 
   /**
    * Closes the file opened by FileParser
@@ -49,7 +48,6 @@ private:
   // Member Data
   std::string inputFileName;
   std::ifstream fileHandle;
-  bool verbose;
 };
 
 #endif // FILEPARSER_H

@@ -44,7 +44,6 @@ void printUsage()
  */
 int main(int argc, char* argv[])
 {
-  bool verbose = false;
   int c;
 
   // Make sure that we have at least 2 arguments.
@@ -57,16 +56,13 @@ int main(int argc, char* argv[])
   }
 
   // Case switch to deal with optional arguments.
-  while((c = getopt(argc, argv, "hv")) != -1)
+  while((c = getopt(argc, argv, "h")) != -1)
   {
     switch(c)
     {
       case 'h':
         printUsage();
         return 0;
-      case 'v':
-        verbose = true;
-        break;
       case '?':
         std::cerr << "Unknown argument " << optopt << " passed.\n";
         return 1;
@@ -81,7 +77,7 @@ int main(int argc, char* argv[])
 
   // Read input file
   std::deque<Entry*> entries;
-  FileParser fileReader = FileParser(inputFileName, verbose);
+  FileParser fileReader = FileParser(inputFileName);
   fileReader.getEntries(entries);
 
   // Write output file

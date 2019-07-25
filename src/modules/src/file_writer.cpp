@@ -31,6 +31,7 @@ void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
   std::deque<Entry*>::iterator it;
   int id = 0;
   bool startedWriting = false;
+  bool lastTagIsHeader = false;
 
   // For each entry, write the entry as a list-item with it's associated id
   for(it = entries.begin(); it != entries.end(); ++it)
@@ -41,27 +42,38 @@ void FileWriter::writeTableOfContents(std::deque<Entry*> entries)
     ss << id;
     ss >> idNumberString;
 
-    // If this is the table of contents start, note that so sublists are properly written
-    if((*it)->getFilePath().compare("None") == 0 && startedWriting == false)
+    // If this is a section header
+    if((*it)->getFilePath().compare("None") == 0)
     {
-      fileHandle << "\n<li>\n<a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
-                 << "</a>\n</li>\n<ul>";
-      startedWriting = true;
+      // In this case, we just started writing the table of contents
+      if(startedWriting == false)
+      {
+        fileHandle << "\n<li>\n<a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
+                   << "</a>\n</li>\n<ul>";
+        startedWriting = true;
+        lastTagIsHeader = true;
+      }
+      // Otherwise we've already written a section, so close that section and start another
+      else
+      {
+        fileHandle << "\n</ul>\n<li>\n<a href=\"#" << (*it)->getName() << "\">"
+                   << (*it)->getTitle() << "</a>\n</li>\n<ul>";
+        lastTagIsHeader = true;
+      }
     }
-    // If we've already started writing, seeing another "None" means end a previous sublist
-    else if((*it)->getFilePath().compare("None") == 0 && startedWriting == true)
-    {
-      fileHandle << "\n</ul>\n<li>\n<a href=\"#" << (*it)->getName() << "\">"
-                 << (*it)->getTitle() << "</a>\n</li>\n<ul>";
-    }
-    // Otherwise just write list items as normal
+    // Else write the list item regularly
     else
     {
       fileHandle << "\n<li>\n<a href=\"#" << (*it)->getName() << "\">" << (*it)->getTitle()
                  << "</a>\n</li>";
+      lastTagIsHeader = false;
     }
   }
-  fileHandle << "</ul>\n\n<hr>";
+
+  if(lastTagIsHeader)
+    fileHandle << "</ul>\n\n<hr>";
+  else
+    fileHandle << "</ul>\n</ul>\n\n<hr>";
 }
 
 // Check if the line contains a tag we want to skip (in constants.h)

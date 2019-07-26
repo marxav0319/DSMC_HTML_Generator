@@ -32,10 +32,10 @@
 *.app
 
 # Output Directory
-bin/
+bin/*
 test/resources/*.png
 test/resources/*.html
 test/test_inputs/*.txt
-test/test_outputs/*.html
+test/test_outputs/*
 sample_file/
 template/

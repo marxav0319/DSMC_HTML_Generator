@@ -13,10 +13,27 @@
 #include <cstdlib>
 #include <unistd.h>
 #include <deque>
+#include <cstdio>
+#include <cstdlib>
 
+#include "constants.h"
 #include "modules/headers/file_parser.h"
 #include "modules/headers/entry.h"
 #include "modules/headers/file_writer.h"
+
+std::string replace(std::string filepath)
+{
+  int position = filepath.find(HTML_FILE_EXTENSION);
+  std::string pdfFilePath = filepath.substr(0, position);
+  return pdfFilePath + PDF_FILE_EXTENSION;
+}
+
+void generatePdfFile(std::string infile)
+{
+  std::string pdfFileName = replace(infile);
+  std::string converterCall = CONVERTER + " " + infile + " " + pdfFileName;
+  std::system(converterCall.c_str());
+}
 
 /**
  * Prints help message and usage information to the console.
@@ -44,6 +61,7 @@ void printUsage()
  */
 int main(int argc, char* argv[])
 {
+  bool pFlag = false;
   int c;
 
   // Make sure that we have at least 2 arguments.
@@ -56,13 +74,16 @@ int main(int argc, char* argv[])
   }
 
   // Case switch to deal with optional arguments.
-  while((c = getopt(argc, argv, "h")) != -1)
+  while((c = getopt(argc, argv, "hp")) != -1)
   {
     switch(c)
     {
       case 'h':
         printUsage();
         return 0;
+      case 'p':
+        pFlag = true;
+        break;
       case '?':
         std::cerr << "Unknown argument " << optopt << " passed.\n";
         return 1;
@@ -83,6 +104,10 @@ int main(int argc, char* argv[])
   // Write output file
   FileWriter fileWriter = FileWriter(outputFileName);
   fileWriter.writeOutput(entries);
+  
+  // Generate pdf
+  if(pFlag)
+    generatePdfFile(outputFileName);
 
   return 0;
 }

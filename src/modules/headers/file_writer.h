@@ -63,10 +63,18 @@ private:
   /**
    * Opens the resource file containing the source HTML and writes it to the output file.
    *
-   * @param entries : The filePath of the file with the HTML snippet.
+   * @param filePath : The filePath of the file with the HTML snippet.
    * @return : void
    */
   void writeFileContents(const std::string filePath);
+
+  /**
+   * Given the filepath to the image, includes the image in the output html page
+   *
+   * @param filepath : the file path of the file holding the image
+   * @return : void
+   */
+  void includeImage(const std::string filePath);
 
   /**
    * Writes the entries and the associated HTML snippets to the file after the table of contents.

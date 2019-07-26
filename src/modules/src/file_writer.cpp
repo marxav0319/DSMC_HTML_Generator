@@ -119,6 +119,12 @@ void FileWriter::writeFileContents(const std::string filePath)
   htmlFileHandle.close();
 }
 
+// Write a single line including the image
+void FileWriter::includeImage(const std::string filePath)
+{
+  fileHandle << "<img scr=\"" << filePath << "\" alt=\"Image could not be loaded.\">\n";
+}
+
 // Writes the entries the body of the HTML file outside of the table of contents
 void FileWriter::writeBody(std::deque<Entry*> entries)
 {
@@ -135,13 +141,25 @@ void FileWriter::writeBody(std::deque<Entry*> entries)
     fileHandle << "\n<div class=\"section\" id=\"" << entry->getName() << "\">" << std::endl;
 
     // If this is a section header, write with <h1> else with <h2>, then close div
-    if(entry->getFilePath().compare("None") == 0)
+    if(entry->getFilePath().compare(NEW_SECTION) == 0)
       fileHandle << "<h1>" << entry->getTitle() << "</h1>" << std::endl;
     else
     {
-      fileHandle << "<h2>" << entry->getTitle() << "</h2>" << std::endl;
-      writeFileContents(entry->getFilePath());
+      fileHandle << "<h2>" << entry->getTitle() << "</h2>\n";
+      if(entry->getFilePath().find(PNG_FILE_EXTENSION) != std::string::npos)
+        includeImage(entry->getFilePath());
+      else if(entry->getFilePath().find(HTML_FILE_EXTENSION) != std::string::npos)
+        writeFileContents(entry->getFilePath());
     }
+    // else if(entry->getFilePath.find(PNG_FILE_EXTENSION) != std::string::npos)
+    // {
+
+    // }
+    // else if(entry->getFilePath.find(HTML_FILE_EXTENSION) != std::string::npos)
+    // {
+    //   fileHandle << "<h2>" << entry->getTitle() << "</h2>" << std::endl;
+    //   writeFileContents(entry->getFilePath());
+    // }
     fileHandle << "\n</div>\n";
 
     // Delete the entry

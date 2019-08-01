@@ -28,13 +28,6 @@ std::string replace(std::string filepath)
   return pdfFilePath + PDF_FILE_EXTENSION;
 }
 
-void generatePdfFile(std::string infile)
-{
-  std::string pdfFileName = replace(infile);
-  std::string converterCall = CONVERTER + " " + infile + " " + pdfFileName;
-  std::system(converterCall.c_str());
-}
-
 /**
  * Prints help message and usage information to the console.
  */
@@ -105,9 +98,5 @@ int main(int argc, char* argv[])
   FileWriter fileWriter = FileWriter(outputFileName);
   fileWriter.writeOutput(entries);
   
-  // Generate pdf
-  if(pFlag)
-    generatePdfFile(outputFileName);
-
   return 0;
 }

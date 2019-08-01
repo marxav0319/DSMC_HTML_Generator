@@ -18,11 +18,7 @@ so I wouldn't advise using it except experimentally.  Here's what the program cu
       associated html.
 + Create an html file
   + Output file consists of table of contents linking sections holding the text located between the
-    `<body></body>` tags in each `<filepath_to_html>` in the input file
-+ Generate a PDF file with the `-p` switch
-  + The PDF file is generated with the help of `wkhtmltopdf`.  You'll need to have the executable
-    located in your `PATH` or you'll have to put it in the same directory as the binary generated
-    by running `make` on this repository.
+    `<body></body>` tags in each `<filepath_to_html>` in the input file.
 
 Eventually the program will also be able to:
 
